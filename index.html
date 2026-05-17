@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Maktub Entretenimiento</title>
+<title>Maktub Online</title>
 
 <style>
 
@@ -20,82 +20,144 @@ background-image:url('fondo.jpg');
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
-background-attachment:scroll;
-color:white;
+display:flex;
+justify-content:center;
+align-items:center;
 text-align:center;
-}
-
-.hero{
-padding:40px 20px;
-min-height:100vh;
-background:rgba(0,0,0,0.3);
-backdrop-filter:blur(2px);
-}
-
-.hero img{
-width:100%;
-max-width:500px;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,0.5);
-margin-bottom:30px;
-}
-
-h1{
-font-size:42px;
-margin-bottom:20px;
-color:#00ff88;
-}
-
-p{
-font-size:22px;
-max-width:700px;
-margin:auto;
-margin-bottom:30px;
-line-height:1.5;
-}
-
-.btn{
-display:inline-block;
-background:#25D366;
-padding:18px 35px;
 color:white;
-text-decoration:none;
-font-size:24px;
+}
+
+.overlay{
+width:100%;
+min-height:100vh;
+background:rgba(0,0,0,0.55);
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+.container{
+max-width:1000px;
+}
+
+.logo{
+font-size:80px;
 font-weight:bold;
-border-radius:15px;
+color:#f5c542;
+text-shadow:0 0 20px #ffcc00;
+margin-bottom:20px;
+}
+
+.subtitle{
+font-size:28px;
+margin-bottom:40px;
+font-weight:bold;
+color:white;
+text-shadow:0 0 10px black;
+}
+
+.boxes{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+margin-bottom:50px;
+}
+
+.box{
+background:rgba(0,0,0,0.6);
+border:2px solid #f5c542;
+padding:25px;
+border-radius:20px;
+width:220px;
+box-shadow:0 0 20px rgba(255,204,0,0.4);
+}
+
+.box h3{
+color:#f5c542;
+font-size:26px;
+margin-bottom:10px;
+}
+
+.box p{
+font-size:18px;
+line-height:1.4;
+}
+
+.whatsapp{
+display:inline-block;
+margin-top:20px;
+background:#25D366;
+color:white;
+padding:22px 40px;
+font-size:34px;
+font-weight:bold;
+text-decoration:none;
+border-radius:20px;
 animation:pulse 1.5s infinite;
+box-shadow:0 0 30px rgba(37,211,102,0.8);
 transition:0.3s;
 }
 
-.btn:hover{
-transform:scale(1.08);
+.whatsapp:hover{
+transform:scale(1.05);
 background:#1ebe5d;
+}
+
+.numero{
+display:block;
+font-size:45px;
+margin-top:10px;
+}
+
+.frase{
+margin-top:25px;
+font-size:38px;
+font-weight:bold;
+color:#f5c542;
+text-shadow:0 0 20px #ffcc00;
 }
 
 @keyframes pulse{
 
 0%{
 transform:scale(1);
-box-shadow:0 0 0 0 rgba(37,211,102,0.7);
 }
 
-70%{
+50%{
 transform:scale(1.05);
-box-shadow:0 0 0 20px rgba(37,211,102,0);
 }
 
 100%{
 transform:scale(1);
-box-shadow:0 0 0 0 rgba(37,211,102,0);
 }
 
 }
 
-footer{
-padding:20px;
-font-size:14px;
-opacity:0.7;
-background:rgba(0,0,0,0.6);
+@media(max-width:768px){
+
+.logo{
+font-size:50px;
+}
+
+.subtitle{
+font-size:22px;
+}
+
+.whatsapp{
+font-size:24px;
+padding:18px 25px;
+}
+
+.numero{
+font-size:32px;
+}
+
+.frase{
+font-size:26px;
+}
+
 }
 
 </style>
@@ -104,25 +166,54 @@ background:rgba(0,0,0,0.6);
 
 <body>
 
-<section class="hero">
+<div class="overlay">
 
-<img src="logo.png" alt="Maktub">
+<div class="container">
 
-<h1>MAKTUB ENTRETENIMIENTO</h1>
+<div class="logo">
+MAKTUB ONLINE
+</div>
 
-<p>
-Tu texto original acá.
-</p>
+<div class="subtitle">
+🔥 PLATAFORMA DE ENTRETENIMIENTO 🔥
+</div>
 
-<a class="btn" href="https://wa.me/5490000000000">
-CONTACTAR POR WHATSAPP
+<div class="boxes">
+
+<div class="box">
+<h3>🎁 BONOS</h3>
+<p>Promociones exclusivas para nuevos usuarios.</p>
+</div>
+
+<div class="box">
+<h3>⚡ RÁPIDO</h3>
+<p>Acceso inmediato y retiros seguros.</p>
+</div>
+
+<div class="box">
+<h3>💎 VIP</h3>
+<p>Atención personalizada las 24 horas.</p>
+</div>
+
+</div>
+
+<a class="whatsapp" href="https://wa.me/5491165710691" target="_blank">
+
+📲 ESCRIBINOS AHORA
+
+<span class="numero">
++54 9 11 6571-0691
+</span>
+
 </a>
 
-</section>
+<div class="frase">
+💰 EMPEZÁ A GANAR HOY MISMO 💰
+</div>
 
-<footer>
-© 2026 Maktub Entretenimiento
-</footer>
+</div>
+
+</div>
 
 </body>
 </html>
