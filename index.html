@@ -16,7 +16,7 @@ font-family:Arial,sans-serif;
 
 body{
 min-height:100vh;
-background-image:url('fondo.jpg');
+background-image:url('https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1920&auto=format&fit=crop');
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
@@ -25,64 +25,76 @@ justify-content:center;
 align-items:center;
 text-align:center;
 color:white;
+overflow:hidden;
 }
 
 .overlay{
 width:100%;
 min-height:100vh;
-background:rgba(0,0,0,0.55);
+background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.85));
 display:flex;
 justify-content:center;
 align-items:center;
 padding:20px;
+backdrop-filter:blur(3px);
 }
 
 .container{
 max-width:1000px;
+animation:fade 1.2s ease;
 }
 
 .logo{
-font-size:80px;
+font-size:90px;
 font-weight:bold;
 color:#f5c542;
-text-shadow:0 0 20px #ffcc00;
+text-shadow:
+0 0 10px #ffcc00,
+0 0 20px #ffcc00,
+0 0 40px #ff9900;
 margin-bottom:20px;
 }
 
 .subtitle{
-font-size:28px;
-margin-bottom:40px;
+font-size:32px;
+margin-bottom:45px;
 font-weight:bold;
 color:white;
-text-shadow:0 0 10px black;
+text-shadow:0 0 15px black;
 }
 
 .boxes{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
-gap:20px;
+gap:25px;
 margin-bottom:50px;
 }
 
 .box{
 background:rgba(0,0,0,0.6);
 border:2px solid #f5c542;
-padding:25px;
-border-radius:20px;
-width:220px;
-box-shadow:0 0 20px rgba(255,204,0,0.4);
+padding:30px;
+border-radius:25px;
+width:240px;
+box-shadow:0 0 25px rgba(255,204,0,0.4);
+transition:0.3s;
+}
+
+.box:hover{
+transform:translateY(-10px) scale(1.03);
+box-shadow:0 0 35px rgba(255,204,0,0.8);
 }
 
 .box h3{
 color:#f5c542;
-font-size:26px;
-margin-bottom:10px;
+font-size:28px;
+margin-bottom:15px;
 }
 
 .box p{
 font-size:18px;
-line-height:1.4;
+line-height:1.5;
 }
 
 .whatsapp{
@@ -90,33 +102,30 @@ display:inline-block;
 margin-top:20px;
 background:#25D366;
 color:white;
-padding:22px 40px;
+padding:22px 50px;
 font-size:34px;
 font-weight:bold;
 text-decoration:none;
 border-radius:20px;
 animation:pulse 1.5s infinite;
-box-shadow:0 0 30px rgba(37,211,102,0.8);
+box-shadow:0 0 35px rgba(37,211,102,0.9);
 transition:0.3s;
 }
 
 .whatsapp:hover{
-transform:scale(1.05);
+transform:scale(1.08);
 background:#1ebe5d;
 }
 
-.numero{
-display:block;
-font-size:45px;
-margin-top:10px;
-}
-
 .frase{
-margin-top:25px;
-font-size:38px;
+margin-top:35px;
+font-size:42px;
 font-weight:bold;
 color:#f5c542;
-text-shadow:0 0 20px #ffcc00;
+text-shadow:
+0 0 10px #ffcc00,
+0 0 20px #ff9900;
+animation:brillo 2s infinite alternate;
 }
 
 @keyframes pulse{
@@ -126,7 +135,7 @@ transform:scale(1);
 }
 
 50%{
-transform:scale(1.05);
+transform:scale(1.06);
 }
 
 100%{
@@ -135,27 +144,49 @@ transform:scale(1);
 
 }
 
+@keyframes brillo{
+
+0%{
+opacity:0.7;
+}
+
+100%{
+opacity:1;
+}
+
+}
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
 @media(max-width:768px){
 
 .logo{
-font-size:50px;
+font-size:55px;
 }
 
 .subtitle{
-font-size:22px;
+font-size:24px;
 }
 
 .whatsapp{
 font-size:24px;
-padding:18px 25px;
-}
-
-.numero{
-font-size:32px;
+padding:18px 30px;
 }
 
 .frase{
-font-size:26px;
+font-size:28px;
 }
 
 }
@@ -197,16 +228,9 @@ MAKTUB ONLINE
 
 </div>
 
-
-</a>
-
-<div class="frase"><a class="whatsapp" href="https://wa.me/5491165710691" target="_blank">
-
+<a class="whatsapp" href="https://wa.me/5491165710691" target="_blank">
 📲 WHATSAPP
-
 </a>
-
-</div>
 
 </div>
 
