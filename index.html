@@ -1,63 +1,69 @@
+from base64 import b64encode
+
+img_path="/mnt/data/WhatsApp Image 2026-05-24 at 11.35.40(1).jpeg"
+
+with open(img_path,"rb") as f:
+    b64=b64encode(f.read()).decode()
+
+html=f"""
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Maktub Online</title>
-
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
+*{{margin:0;padding:0;box-sizing:border-box;}}
+body{{
 background:#000;
 display:flex;
 justify-content:center;
-}
-
-.container{
+min-height:100vh;
+}}
+.container{{
 position:relative;
 width:100%;
 max-width:480px;
-}
-
-img{
+}}
+img{{
 width:100%;
 display:block;
-}
-
-/* Botón invisible sobre el botón verde de la imagen */
-
-.whatsapp{
+}}
+.whatsapp{{
 position:absolute;
-
-top:34%;
+top:33%;
 left:10%;
 width:80%;
 height:8%;
-
-display:block;
-z-index:100;
-}
-
+z-index:10;
+}}
+.footerbtn{{
+position:absolute;
+bottom:0%;
+left:5%;
+width:90%;
+height:6%;
+z-index:10;
+}}
 </style>
 </head>
-
 <body>
-
 <div class="container">
-
-<img src="maktub.jpg">
+<img src="data:image/jpeg;base64,{b64}">
 
 <a class="whatsapp"
 href="https://wa.me/5491165710691?text=Hola%20quiero%20reclamar%20el%20bonus%20del%2040%25"
 target="_blank"></a>
 
-</div>
+<a class="footerbtn"
+href="https://wa.me/5491165710691?text=Hola%20quiero%20reclamar%20el%20bonus%20del%2040%25"
+target="_blank"></a>
 
+</div>
 </body>
 </html>
+"""
+with open("/mnt/data/index.html","w",encoding="utf-8") as f:
+    f.write(html)
+
+print("Creado")
