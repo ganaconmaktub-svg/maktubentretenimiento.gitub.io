@@ -1,74 +1,128 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Maktub Online</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAKTUB ONLINE</title>
 
-<style>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+    body{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      font-family:Arial, Helvetica, sans-serif;
+      overflow:hidden;
+      background:
+      linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
+      url('https://images.unsplash.com/photo-1517232115160-ff93364542dd?q=80&w=1920&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+    }
 
-body{
-background:#000;
-display:flex;
-justify-content:center;
-}
+    .container{
+      text-align:center;
+      padding:40px;
+      backdrop-filter: blur(4px);
+    }
 
-.container{
-position:relative;
-width:100%;
-max-width:430px;
-}
+    h1{
+      color:#ffd700;
+      font-size:72px;
+      font-weight:900;
+      letter-spacing:4px;
+      text-shadow:
+      0 0 10px #ffd700,
+      0 0 20px #ff0000,
+      0 0 40px #ff0000;
+      margin-bottom:20px;
+    }
 
-.imagen{
-width:100%;
-display:block;
-}
+    .subtexto{
+      color:#fff;
+      font-size:20px;
+      font-weight:bold;
+      margin-bottom:8px;
+      text-shadow:0 0 10px rgba(255,255,255,.5);
+    }
 
-.boton1{
-position:absolute;
-top:33%;
-left:10%;
-width:80%;
-height:9%;
-z-index:999;
-}
+    .subtexto2{
+      color:#dcdcdc;
+      font-size:16px;
+      margin-bottom:28px;
+    }
 
-.boton2{
-position:absolute;
-bottom:2%;
-left:5%;
-width:90%;
-height:6%;
-z-index:999;
-}
+    .btn-whatsapp{
+      display:inline-block;
+      background:#25D366;
+      color:white;
+      text-decoration:none;
+      font-size:32px;
+      font-weight:bold;
+      padding:22px 60px;
+      border-radius:20px;
+      box-shadow:
+      0 0 15px #25D366,
+      0 0 30px #25D366;
+      transition:0.3s;
+    }
 
-</style>
+    .btn-whatsapp:hover{
+      transform:scale(1.08);
+      background:#1ebe5d;
+      box-shadow:
+      0 0 25px #25D366,
+      0 0 50px #25D366;
+    }
 
+    @media(max-width:768px){
+      h1{
+        font-size:42px;
+      }
+
+      .subtexto{
+        font-size:16px;
+      }
+
+      .subtexto2{
+        font-size:14px;
+      }
+
+      .btn-whatsapp{
+        font-size:24px;
+        padding:18px 40px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="container">
+  <div class="container">
+    <h1>MAKTUB ONLINE</h1>
 
-<img class="imagen"
-src="https://i.imgur.com/NhL8N3T.jpeg">
+    <p class="subtexto">
+      🎁 BONUS 40% NUEVOS CLIENTES
+    </p>
 
-<a class="boton1"
-href="https://wa.me/5491165710691?text=Hola%20quiero%20reclamar%20el%20bonus%20del%2040%25"
-target="_blank"></a>
+    <p class="subtexto2">
+      🔒 Seguro • Atención rápida
+    </p>
 
-<a class="boton2"
-href="https://wa.me/5491165710691?text=Hola%20quiero%20reclamar%20el%20bonus%20del%2040%25"
-target="_blank"></a>
-
-</div>
+    <a 
+      class="btn-whatsapp" 
+      href="https://wa.me/5491165710691?text=Hola%20quiero%20info%20de%20los%20beneficios"
+      target="_blank"
+    >
+      WHATSAPP
+    </a>
+  </div>
 
 </body>
 </html>
