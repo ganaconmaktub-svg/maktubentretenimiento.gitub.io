@@ -6,230 +6,56 @@
 <title>Maktub Online</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
 }
 
 body{
-background:#050505;
-color:white;
+background:#000;
+display:flex;
+justify-content:center;
 }
 
 .container{
-max-width:1200px;
-margin:auto;
-padding:20px;
+position:relative;
+width:100%;
+max-width:480px;
 }
 
-.hero{
-background:linear-gradient(180deg,#111,#000);
-padding:60px 20px;
-text-align:center;
-border-radius:20px;
-border:1px solid rgba(255,255,255,.1);
+img{
+width:100%;
+display:block;
 }
 
-.logo{
-font-size:60px;
-font-weight:bold;
-color:#ffbf00;
-text-shadow:0 0 20px #ffbf00;
+/* Botón invisible sobre el botón verde de la imagen */
+
+.whatsapp{
+position:absolute;
+
+top:34%;
+left:10%;
+width:80%;
+height:8%;
+
+display:block;
+z-index:100;
 }
 
-.subtitle{
-margin-top:10px;
-font-size:25px;
-letter-spacing:10px;
-color:#ddd;
-}
-
-.bonus-box{
-margin:30px auto;
-max-width:500px;
-padding:25px;
-border-radius:15px;
-border:2px solid #ffbf00;
-background:#151515;
-box-shadow:0 0 20px rgba(255,191,0,.5);
-}
-
-.bonus-box h2{
-font-size:40px;
-color:#ffbf00;
-}
-
-.bonus-box p{
-margin-top:10px;
-font-size:20px;
-}
-
-.whatsapp-btn{
-display:inline-block;
-margin-top:30px;
-padding:20px 40px;
-background:#00d436;
-color:white;
-font-size:28px;
-text-decoration:none;
-border-radius:60px;
-font-weight:bold;
-box-shadow:0 0 30px #00ff44;
-transition:.3s;
-}
-
-.whatsapp-btn:hover{
-transform:scale(1.05);
-}
-
-.features{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-margin-top:60px;
-}
-
-.card{
-background:#101010;
-padding:25px;
-border-radius:15px;
-border:1px solid rgba(255,255,255,.1);
-text-align:center;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
-border-color:#ffbf00;
-}
-
-.card h3{
-color:#ffbf00;
-margin-bottom:15px;
-}
-
-.security{
-margin-top:50px;
-padding:30px;
-background:#101010;
-border-radius:20px;
-text-align:center;
-}
-
-.security h2{
-color:#00ff66;
-margin-bottom:10px;
-}
-
-.footerBonus{
-margin-top:50px;
-padding:30px;
-border-radius:20px;
-background:linear-gradient(90deg,#0b0,#000);
-text-align:center;
-}
-
-.footerBonus h2{
-font-size:40px;
-}
-
-footer{
-margin-top:40px;
-text-align:center;
-padding:20px;
-color:#999;
-font-size:14px;
-}
 </style>
-
 </head>
 
 <body>
 
 <div class="container">
 
-<section class="hero">
+<img src="maktub.jpg">
 
-<div class="logo">
-👑 MAKTUB
-</div>
-
-<div class="subtitle">
-ONLINE
-</div>
-
-<div class="bonus-box">
-<h2>BONUS 40%</h2>
-<p>Nuevos clientes</p>
-</div>
-
-<a class="whatsapp-btn"
+<a class="whatsapp"
 href="https://wa.me/5491165710691?text=Hola%20quiero%20reclamar%20el%20bonus%20del%2040%25"
-target="_blank">
-
-📲 PEDÍ TU BONUS POR WHATSAPP
-
-</a>
-
-</section>
-
-<section class="features">
-
-<div class="card">
-<h3>🎰 Casino Online</h3>
-<p>Juegos reales y las mejores tragamonedas.</p>
-</div>
-
-<div class="card">
-<h3>💸 Cargas y retiros rápidos</h3>
-<p>Mové tu dinero fácil y seguro.</p>
-</div>
-
-<div class="card">
-<h3>🎧 Atención inmediata</h3>
-<p>Te ayudamos al instante.</p>
-</div>
-
-<div class="card">
-<h3>📱 Pagos en pesos</h3>
-<p>Métodos locales sin complicaciones.</p>
-</div>
-
-</section>
-
-<section class="security">
-
-<h2>🔒 100% Seguro</h2>
-
-<p>
-Tu información y operaciones están protegidas.
-</p>
-
-</section>
-
-<section class="footerBonus">
-
-<h2>ACTIVÁ TU 40% DE BONUS</h2>
-
-<br>
-
-<a class="whatsapp-btn"
-href="https://wa.me/5491165710691?text=Hola%20quiero%20reclamar%20el%20bonus%20del%2040%25"
-target="_blank">
-
-WHATSAPP
-
-</a>
-
-</section>
-
-<footer>
-
-+18 | Jugá con responsabilidad
-
-</footer>
+target="_blank"></a>
 
 </div>
 
