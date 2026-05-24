@@ -1,239 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-<title>MAKTUB ONLINE</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maktub Online</title>
 
 <style>
-
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#050505;
-color:white;
-overflow-x:hidden;
-}
-
-.hero{
-min-height:100vh;
+background:#000;
+font-family:Arial,sans-serif;
 display:flex;
 justify-content:center;
 align-items:center;
-padding:40px 20px;
-background:
-linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
-url('https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1400&auto=format&fit=crop');
-background-size:cover;
-background-position:center;
+min-height:100vh;
+padding:10px;
 }
 
 .container{
-max-width:420px;
 width:100%;
-background:rgba(10,10,10,.92);
-border:2px solid #00ff88;
-border-radius:30px;
-padding:35px 25px;
-text-align:center;
-box-shadow:
-0 0 20px #00ff88,
-0 0 60px rgba(0,255,136,.3);
-backdrop-filter:blur(10px);
-animation:fadeIn 1s ease;
+max-width:430px;
+position:relative;
 }
 
-.logo{
-font-size:38px;
-font-weight:800;
-color:#00ff88;
-text-shadow:0 0 15px #00ff88;
-margin-bottom:10px;
-letter-spacing:2px;
-}
-
-.subtitle{
-font-size:16px;
-color:#cfcfcf;
-margin-bottom:25px;
-}
-
-.bonus{
-background:linear-gradient(135deg,#00ff88,#00ccff);
-padding:18px;
+.poster{
+width:100%;
 border-radius:20px;
-margin-bottom:25px;
-color:#000;
-font-weight:800;
-font-size:30px;
-box-shadow:0 0 25px rgba(0,255,136,.5);
-animation:pulse 2s infinite;
-}
-
-.bonus span{
 display:block;
-font-size:15px;
-margin-top:5px;
-font-weight:600;
-}
-
-.info{
-display:flex;
-flex-direction:column;
-gap:14px;
-margin-bottom:30px;
-}
-
-.card{
-background:#111;
-border:1px solid rgba(255,255,255,.08);
-padding:15px;
-border-radius:18px;
-font-size:15px;
-color:#f2f2f2;
-box-shadow:0 0 15px rgba(255,255,255,.03);
-}
-
-.card strong{
-color:#00ff88;
+box-shadow:0 0 30px rgba(0,255,150,.25);
 }
 
 .whatsapp-btn{
-display:flex;
-justify-content:center;
-align-items:center;
-gap:12px;
-width:100%;
-background:#25d366;
-color:white;
-text-decoration:none;
-padding:18px;
-font-size:20px;
-font-weight:700;
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+bottom:12%;
+width:80%;
+height:60px;
+background:#25D366;
+border:none;
 border-radius:18px;
-transition:.3s;
+font-size:22px;
+font-weight:bold;
+color:#fff;
+cursor:pointer;
 box-shadow:0 0 20px rgba(37,211,102,.5);
 }
 
 .whatsapp-btn:hover{
-transform:scale(1.04);
-background:#1ebe5d;
+transform:translateX(-50%) scale(1.03);
 }
-
-.whatsapp-btn img{
-width:28px;
-}
-
-.bottom-text{
-margin-top:22px;
-font-size:13px;
-color:#9d9d9d;
-line-height:1.6;
-}
-
-@keyframes pulse{
-0%{transform:scale(1);}
-50%{transform:scale(1.03);}
-100%{transform:scale(1);}
-}
-
-@keyframes fadeIn{
-from{
-opacity:0;
-transform:translateY(20px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
-}
-
-@media(max-width:480px){
-
-.logo{
-font-size:32px;
-}
-
-.bonus{
-font-size:25px;
-}
-
-.whatsapp-btn{
-font-size:18px;
-padding:16px;
-}
-
-}
-
 </style>
 </head>
 
 <body>
 
-<section class="hero">
-
 <div class="container">
 
-<div class="logo">
-MAKTUB ONLINE
-</div>
+<img class="poster" src="TU_IMAGEN_AQUI.jpg" alt="Maktub Online">
 
-<div class="subtitle">
-🎰 Casino Online Premium
-</div>
-
-<div class="bonus">
-40% BONUS
-<span>NUEVOS CLIENTES</span>
-</div>
-
-<div class="info">
-
-<div class="card">
-💸 <strong>Cargas y retiros rápidos</strong>
-</div>
-
-<div class="card">
-🇦🇷 <strong>Pagos en pesos argentinos</strong>
-</div>
-
-<div class="card">
-⚡ <strong>Atención inmediata por WhatsApp</strong>
-</div>
-
-<div class="card">
-🔒 <strong>Plataforma segura y confiable</strong>
-</div>
-
-</div>
-
-<a class="whatsapp-btn"
-href="https://wa.me/5491165710691?text=Hola%20quiero%20reclamar%20el%20bonus%20del%2040%25"
-target="_blank">
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-
+<button class="whatsapp-btn"
+onclick="window.location.href='https://wa.me/5491165710691?text=Hola%20quiero%20reclamar%20el%20bonus%20del%2040%25'">
 PEDÍ TU BONUS
-
-</a>
-
-<div class="bottom-text">
-Jugá desde cualquier dispositivo 📱<br>
-Ruleta • Slots • Casino en vivo 🎲
-</div>
+</button>
 
 </div>
-
-</section>
 
 </body>
 </html>
